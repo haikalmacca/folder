@@ -1,0 +1,284 @@
+<html>
+ <head>
+  <title>
+   Portfolio
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin: 20px 0 10px;
+        }
+        .header h2 {
+            font-size: 1.5em;
+            color: #ff0000;
+        }
+        .header p {
+            font-size: 1em;
+            color: #ccc;
+        }
+        .header .social-icons {
+            margin: 20px 0;
+        }
+        .header .social-icons a {
+            color: #ff0000;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+        .section-title {
+            font-size: 2em;
+            margin: 50px 0 20px;
+            text-align: center;
+        }
+        .education, .services, .skills, .contact {
+            margin-bottom: 50px;
+        }
+        .education .timeline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .education .timeline-item {
+            background-color: #ff0000;
+            padding: 20px;
+            margin: 10px 0;
+            width: 80%;
+            border-radius: 10px;
+            position: relative;
+        }
+        .education .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background-color: #000;
+            border: 2px solid #ff0000;
+            border-radius: 50%;
+        }
+        .services .service-item {
+            background-color: #ff0000;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .services .service-item h3 {
+            margin-bottom: 10px;
+        }
+        .skills .skill-icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .skills .skill-icons i {
+            font-size: 2em;
+            margin: 10px;
+            color: #ff0000;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact form input, .contact form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ff0000;
+            border-radius: 5px;
+            background-color: #000;
+            color: #fff;
+        }
+        .contact form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff0000;
+            color: #fff;
+            cursor: pointer;
+        }
+        @media (min-width: 768px) {
+            .services .service-item {
+                width: 45%;
+                display: inline-block;
+            }
+            .column-img{
+               height: 680px;
+            
+            }
+         }
+  * {
+    box-sizing: border-box;
+
+  }
+    .column{
+      float: left;
+      width: 33.33%;
+      padding: 10px; 
+    
+  }
+  .row::after{
+    content: "";
+    display: table;
+    clear: both;
+  } 
+            
+
+        
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="header">
+    <img alt="Profile picture of M.Fakhri Alghifari" height="150" src="image/Fakhri alghifari.jpeg.jpg" width="150"/>
+    <h1>
+     Hi, It's M.Fakhri Algifari
+    </h1>
+    <h2>
+     I'm a Web Developer
+    </h2>
+    <p>
+     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <div class="social-icons">
+     <a href="#">
+      <i class="fab fa-facebook">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-linkedin">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-github">
+      </i>
+     </a>
+    </div>
+   </div>
+   <div class="education">
+    <h2 class="section-title">
+     Riwayat Sekolah
+    </h2>
+    <div class="timeline">
+     <div class="timeline-item">
+      <h3>
+       TK
+      </h3>
+      <p>
+       
+      </p>
+     </div>
+     <div class="timeline-item">
+      <h3>
+       SD
+      </h3>
+      <p>
+       
+      </p>
+     </div>
+     <div class="timeline-item">
+      <h3>
+       SMP
+      </h3>
+      <p>
+       
+      </p>
+     </div>
+     <div class="timeline-item">
+      <h3>
+       SMK
+      </h3>
+      <p>
+       
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="services">
+    <h2 class="section-title">
+     My Project
+    </h2>
+    <section class="portfolio" id="portfolio">
+      <div class="row">
+        <div class="column">
+          <img src="image/Baju.jpeg.jpg" alt="" class="column-img" width="100%">
+
+        </div>
+      <div class="row">
+        <div class="column">
+          <img src="image/camera.jpg" alt="" class="column-img" width="100%">
+
+     
+        </div>
+      <div class="row">
+        <div class="column">
+          <img src="image/milk.jpeg.jpg" alt="" class="column-img" width="100%">
+
+
+        </div>
+        </div>      
+        </div>
+      </div>
+      </section>
+      
+    <div>
+     <h3>
+     </p>
+    </div>
+   </div>
+   <div class="skills">
+    <h2 class="section-title">
+     Skills
+    </h2>
+    <div class="skill-icons">
+     <i class="fab fa-html5">
+     </i>
+     <i class="fab fa-css3-alt">
+     </i>
+     <i class="fab fa-js">
+     </i> 
+    </div>
+   </div>
+   <div class="contact">
+    <h2 class="section-title">
+     Contact Me
+    </h2>
+    <form>
+     <input placeholder="Name" type="text"/>
+     <input placeholder="Email" type="email"/>
+     <textarea placeholder="Your Message"></textarea>
+     <button type="submit">
+      Send Message
+     </button>
+    </form>
+   </div>
+  </div>
+ </body>
+</html>
